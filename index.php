@@ -1,36 +1,32 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Manhattan</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>My Spotify Profile</title>
+    <script src="src/script.js" type="module"></script>
 </head>
-<style>
-    .Titulo{
-        display: flex;
-        justify-content: center;
-    }
-</style>
+
 <body>
-    <header>
-        <h1 class="Titulo">Actual Shuffle For Spotify</h1>
-        <nav class="Titulo">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="register.php">Registrarse</a></li>
-                <li><a href="login.php">Inciar Sesión</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="Titulo">
-        <aside class="sidebar">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd21I1HTEY0lkZBCGbWKfIZFdd1Za086ZRog&s" alt="Publicidad 1">
-        </aside>
-       
+    <h1>Display your Spotify profile data</h1>
+
+    <section id="profile">
+        <h2>Logged in as <span id="displayName"></span></h2>
+        <span id="avatar"></span>
+        <ul>
+            <li>User ID: <span id="id"></span></li>
+            <li>Email: <span id="email"></span></li>
+            <li>Spotify URI: <a id="uri" href="#"></a></li>
+            <li>Link: <a id="url" href="#"></a></li>
+            <li>Profile Image: <span id="imgUrl"></span></li>
+        </ul>
+    </section>
 
 </body>
 
 </html>
+
+<!-- Note- We're referring directly to the TypeScript file, 
+ and we're using the `type="module"` attribute. 
+ Vite will transpile our TypeScript to JavaScript 
+ so that it can run in the browser. -->
